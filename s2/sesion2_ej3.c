@@ -18,10 +18,10 @@ int main() {
 
     // b)
     printf("Introduce tus tres iniciales: ");
-    scanf(" %c%c%c", &ini1, &ini2, &ini3); // " %c" para ignorar cualquier salto de lÃ­nea anterior
+    scanf(" %c%c%c", &ini1, &ini2, &ini3); 
 
-    // c) Pedimos el aÃ±o de nacimiento
-    printf("Introduce tu aÃ±o de nacimiento: ");
+    // c) Pedimos el anyo de nacimiento
+    printf("Introduce tu anyo de nacimiento: ");
     scanf("%d", &anyo_nacimiento);
 
 
@@ -29,7 +29,7 @@ int main() {
 
     // saludo y edas
     printf("Hola %c%c%c\n", ini1, ini2, ini3);
-    printf("El 31/DIC/2015 tendras %d aÃ±os\n", edad);
+    printf("El 31/DIC/2015 tenias %d anyos\n", edad);
 
     return 0;
 }
