@@ -13,7 +13,7 @@ int main(){
 
     int expresion;
 
-    expresion = 5/2 + 20%6;
+    expresion = 5/2 + 20%6; //
     printf("La expresion 5/2 + 20%%6 devuelve: %d", expresion);
 
     /*
