@@ -8,6 +8,7 @@
 */
 
 #include <stdio.h>
+#include "colours.h"
 
 int main() {
     char ini1, ini2, ini3;
@@ -28,8 +29,17 @@ int main() {
     edad = 2015 - anyo_nacimiento;
 
     // saludo y edas
-    printf("Hola %c%c%c\n", ini1, ini2, ini3);
-    printf("El 31/DIC/2015 tenias %d anyos\n", edad);
+
+    printf("Hola ");   
+    cambiar_color(RED);
+    printf("%c%c%c\n", ini1, ini2, ini3);
+    
+    cambiar_color(DEFAULT);
+    printf("El 31/DIC/2015 tenias ");
+    cambiar_color(YELLOW);
+    printf("%d", edad);
+    cambiar_color(DEFAULT);
+    printf(" anyos. \n");
 
     return 0;
 }
