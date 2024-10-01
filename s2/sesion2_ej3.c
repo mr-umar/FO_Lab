@@ -18,11 +18,11 @@ int main() {
     printf("Hola\n");
 
     // b)
-    printf("Introduce tus tres iniciales: ");
+    printf("> Introduce tus tres iniciales: ");
     scanf(" %c%c%c", &ini1, &ini2, &ini3); 
 
     // c) Pedimos el anyo de nacimiento
-    printf("Introduce tu anyo de nacimiento: ");
+    printf("> Introduce tu anyo de nacimiento: ");
     scanf("%d", &anyo_nacimiento);
 
 

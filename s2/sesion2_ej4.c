@@ -15,7 +15,7 @@ int main() {
 
     float radio;
 
-    printf("Introduzca el radio del circulo: ");
+    printf("> Introduzca el radio del circulo: ");
     scanf("%f", radio);
 
     float area = PI*radio*radio, perimetro = 2*PI*radio;

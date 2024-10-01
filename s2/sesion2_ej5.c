@@ -15,7 +15,7 @@ int main()
 {
    int a, b, aux;
 
-   printf("Introduzca dos valores para las variables a y b: ");
+   printf("> Introduzca dos valores para las variables a y b: ");
    scanf("%d %d%*c", &a, &b);
 
    aux = b; // aux guarda el valor de b
