@@ -11,13 +11,14 @@
 
 
 int main() {
+
     char caracter;
 
-
-    printf("Introduzca un caracter: ");
+    printf("> Introduzca un caracter: ");
     scanf(" %c", &caracter);  
 
-    if ((caracter >= 65 && caracter <= 90) || (caracter >= 97 && caracter <= 122)) {
+    // Comprobo si es un digit
+    if ((caracter >= 'A' && caracter <= 'Z') || (caracter >= 'a' && caracter <= 'z')) {
         printf("Es una letra\n");
 
 
@@ -25,24 +26,27 @@ int main() {
             caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O' || caracter == 'U') {
             printf("Es una vocal\n");
         } else {
+            printf("No es una vocal\n");  
             printf("Es una consonante\n");
         }
 
-
-        if (caracter >= 65 && caracter <= 90) {  
+        if (caracter >= 'A' && caracter <= 'Z') {  
             printf("Es una mayuscula\n");
             printf("No es una minuscula\n");
-
+            
+    
             printf("El caracter con la capitalizacion invertida es %c\n", caracter + 32);
-        } else if (caracter >= 97 && caracter <= 122) {  
+        } else if (caracter >= 'a' && caracter <= 'z') {  
             printf("No es una mayuscula\n");
             printf("Es una minuscula\n");
 
             printf("El caracter con la capitalizacion invertida es %c\n", caracter - 32);
         }
+        printf("No es un digit\n");
     }
-
-    else if (caracter >= 48 && caracter <= 57) {
+    
+    // comprobo si es un num
+    else if (caracter >= '0' && caracter <= '9') {
         printf("No es una letra\n");
         printf("No es una vocal\n");
         printf("No es una consonante\n");
@@ -51,6 +55,7 @@ int main() {
         printf("Es un digito\n");
     }
 
+        // altres casos
         else {
         printf("No es una letra\n");
         printf("No es una vocal\n");
