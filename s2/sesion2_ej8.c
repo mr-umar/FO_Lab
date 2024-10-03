@@ -14,19 +14,24 @@
 int main(){
 
     char tipoFigura;
-    float datoA, datoB, area;
+    float base, altura, radio, area;
 
-    printf("Introduzca la descripcion de la figura: ");
-    scanf("%c %f %f", &tipoFigura, &datoA, &datoB);
+    printf("> Introduzca la descripcion de la figura: ");
+    scanf("%c", &tipoFigura);
 
     if (tipoFigura == 't' || tipoFigura == 'T'){
-        area = (datoA * datoB) / 2;
+        scanf("%f %f", &base, &altura);
 
-        printf("Area del Triangulo = %f\n", area);
+        area = (base * altura) / 2;
+
+        printf("Area del Triangulo = %.2f\n", area);
+
     } else if (tipoFigura == 'c' || tipoFigura == 'C') {
-        area = PI * datoA * datoA;
+        scanf("%f", &radio);
 
-        printf("Area del Circulo = %f\n", area);
+        area = PI * radio * radio;
+
+        printf("Area del Circulo = %.2f\n", area);
     } else {
         printf("El tipo de la figura es incorrecto!\n");
     };
