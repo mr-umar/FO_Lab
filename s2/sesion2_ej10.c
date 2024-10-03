@@ -7,6 +7,9 @@
 **
 */
 
+#include <stdio.h>
+#include "colours.h"
+
 int main(){
 
     int numeroUsuario;
@@ -15,8 +18,7 @@ int main(){
     scanf("%d", &numeroUsuario);
 
 
-    switch(numeroUsuario)
-    {
+    switch(numeroUsuario) {
     case 0:
         
         break;
@@ -24,7 +26,7 @@ int main(){
     
     
     default:
-    
+
     }
 
 
