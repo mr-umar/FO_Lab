@@ -18,7 +18,9 @@ int main(){
     printf("Introduzca un valor entero entre 0 y 9: ");
     scanf("%d", &numeroUsuario);
 
+    if (numeroUsuario <= 9 && numeroUsuario >= 0){
     printf("Ha introducido el ");
+    }
 
     if (numeroUsuario % 2 == 0) {
         cambiar_color(GREEN);

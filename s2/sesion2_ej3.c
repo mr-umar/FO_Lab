@@ -14,9 +14,6 @@ int main() {
     char ini1, ini2, ini3;
     int anyo_nacimiento, edad;
 
-    // a)
-    printf("Hola\n");
-
     // b)
     printf("> Introduce tus tres iniciales: ");
     scanf(" %c%c%c", &ini1, &ini2, &ini3); 
