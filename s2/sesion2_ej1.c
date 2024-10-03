@@ -1,7 +1,7 @@
 /*
 ** Fichero: sesion2_ej1.c
 ** Autor: Umar Mohammad Riaz
-** Fecha: 25/07/2024
+** Fecha: 25/09/2024
 **
 ** Descripción: Ejercico 1 de la sesión 2 de labotario.
 **

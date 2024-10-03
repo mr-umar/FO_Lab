@@ -1,7 +1,7 @@
 /*
 ** Fichero: sesion2_ej7b.c
 ** Autor: Umar Mohammad Riaz
-** Fecha: 25/07/2024
+** Fecha: 25/09/2024
 **
 ** Descripcion: Ejercicio 7b de la sesión 2 de laboratorio.
 **
