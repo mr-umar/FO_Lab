@@ -10,6 +10,15 @@
 #include <stdio.h>
 #include "colours.h"
 
+int espar(int numero){
+
+    int resultado;
+    resultado = numero % 2;
+
+    return resultado;
+};
+
+
 int main(){
 
     int numeroUsuario;
@@ -30,4 +39,6 @@ int main(){
     }
 
 
-}
+};
+
+
