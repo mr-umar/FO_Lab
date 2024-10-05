@@ -66,7 +66,7 @@ int main(){
         printf("El numero introducido es dificil de escribir\n");
     }
 
-
+    cambiar_color(DEFAULT);
 };
 
 

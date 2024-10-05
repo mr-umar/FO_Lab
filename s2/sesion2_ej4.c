@@ -18,10 +18,11 @@ int main() {
     printf("> Introduzca el radio del circulo: ");
     scanf("%f", &radio);
 
+    // calculamos el area y el perimetro
     float area = PI*radio*radio, perimetro = 2*PI*radio;
 
-    printf("\nArea del circulo: %f", area);
-    printf("\nPerimetro del circulo: %f", perimetro);
+    printf("\nArea del circulo: %g", area); // %g ajusta automaticame el numero de decimales
+    printf("\nPerimetro del circulo: %g", perimetro);
 
     return 0;
 }
