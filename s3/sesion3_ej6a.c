@@ -7,27 +7,24 @@
 **
 */
 
-# include <stdio.h>
+#include <stdio.h>
 
-int main(){
-
-    float x, resultado;
-    int n, i;
+int main() {
+    double x, resultado = 1.0;
+    unsigned int n;
+    int i;  
 
     printf("Introduzca el valor de x (real): ");
-    scanf("%f", &x);
+    scanf("%lf", &x);
 
     printf("Introduzca el valor de n (natural): ");
-    scanf("%d", &n);
+    scanf("%u", &n);
 
-    if (n != 0)
-        for (i = 1; i <= n; i++){
-            resultado *= i;
-        }
+    for (i = 0; i < n; i++) {
+        resultado *= x;
+    }
 
-
-
-
-
+    printf("El resultado de %.2f elevado a %u es: %.2f\n", x, n, resultado);
+    
     return 0;
 }
