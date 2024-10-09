@@ -11,16 +11,16 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int numero, i;
 
     printf("Introduzca un numero natural: ");
-    scanf("%d", &n);
+    scanf("%d", &numero);
 
     printf("Secuencia de numeros: ");
 
-    for (int i = 0; i <= n; i++) {
+    for (i = 0; i <= numero; i++) {
         printf("%d", i);
-        if (i < n) {
+        if (i < numero) {
             printf(", ");
         }
     }
