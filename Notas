@@ -1,38 +1,5 @@
 // Notas
 
 
-/*
-**  Fichero:    sesion3_ej4.c
-**  Autor:      Umar
-**  Fecha:      09-10-2024
-**  
-**  Descripción: Programa que pide un número natural n (n > 0) y
-**               muestra todos sus divisores.
-*/
 
-#include <stdio.h>
 
-int main() {
-    int número;
-    int i;  // Variable de control del bucle
-
-    printf("Introduzca un numero natural: ");
-    scanf("%d", &número);
-
-    if (número > 0) {
-        printf("Los divisores de %d son: ", número);
-        for (i = 1; i <= número; i++) {
-            if (número % i == 0) {
-                printf("%d", i);
-                if (i < número) {
-                    printf(", ");
-                }
-            }
-        }
-        printf("\n");
-    } else {
-        printf("El numero introducido no es un natural valido.\n");
-    }
-
-    return 0;
-}

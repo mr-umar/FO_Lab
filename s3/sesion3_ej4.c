@@ -11,13 +11,21 @@
 #include <stdio.h>
 
 int main() {
-
-    int numero;
+    int número, i;
 
     printf("Introduzca un numero natural: ");
+    scanf("%d", &número);
 
-
-
+    printf("Los divisores de %d son: ", número);
+    for (i = 1; i <= número; i++) {
+        if (número % i == 0) {
+            printf("%d", i);
+            if (i < número) {
+                printf(", ");
+            }
+        }
+    }
+    printf("\n");
 
     return 0;
 }
