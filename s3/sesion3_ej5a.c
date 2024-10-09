@@ -7,7 +7,20 @@
 **
 */
 
+
 #include <stdio.h>
 
-int main() {}
+int main() {
+    unsigned long m, factorial = 1;
+    int i;  // Variable de control del bucle
 
+    printf("Introduzca el valor de m: ");
+    scanf("%lu", &m);
+
+    for (i = 1; i <= m; i++) {
+        factorial *= i;
+    }
+
+    printf("%lu! = %lu\n", m, factorial);
+    return 0;
+}
