@@ -1,1 +1,31 @@
 // Notas
+
+
+/*
+**  Fichero:    sesion3_ej6a.c
+**  Autor:      Umar
+**  Fecha:      09-10-2024
+**  
+**  Descripción: Programa que calcula el valor de x^n (x elevado a n)
+**               usando solo operaciones aritméticas básicas.
+*/
+
+#include <stdio.h>
+
+int main() {
+    double x, resultado = 1.0;
+    unsigned int n;
+    int i;  // Variable de control del bucle
+
+    printf("Introduzca el valor de x (real): ");
+    scanf("%lf", &x);
+    printf("Introduzca el valor de n (natural): ");
+    scanf("%u", &n);
+
+    for (i = 0; i < n; i++) {
+        resultado *= x;
+    }
+
+    printf("El resultado de %.2f elevado a %u es: %.2f\n", x, n, resultado);
+    return 0;
+}
