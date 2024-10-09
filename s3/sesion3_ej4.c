@@ -12,7 +12,12 @@
 
 int main() {
 
-    
+    int numero;
+
+    printf("Introduzca un numero natural: ");
+
+
+
 
     return 0;
 }
