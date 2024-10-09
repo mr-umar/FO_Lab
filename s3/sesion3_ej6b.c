@@ -10,18 +10,36 @@
 #include <stdio.h>
 
 int main() {
-    double x, resultado = 1.0;
+    double x, cosx = 1.0, suma;
     unsigned int n;
-    int i;  
+    int i, j; 
+    double factorial, potencia;
 
-    printf("Introduzca el valor de x (real): ");
+    printf("Introduzca un valor real (x): ");
     scanf("%lf", &x);
-
-    printf("Introduzca el valor de n (natural): ");
+    printf("Introduzca un valor natural (n): ");
     scanf("%u", &n);
 
+    for (i = 1; i <= n; i++) {
+        factorial = 1.0;
+        potencia = 1.0;
 
+        // Calcular x^(2*i) manualmente
+        for (j = 1; j <= 2 * i; j++) {
+            potencia *= x;
+        }
 
-      
+        // Calcular (2*i)!
+        for (j = 1; j <= 2 * i; j++) {
+            factorial *= j;
+        }
+
+        // Calcular el suma de la serie
+        suma = (potencia / factorial) * (i % 2 == 0 ? 1 : -1);
+
+        cosx += suma;
+    }
+
+    printf("cos(%.2f) = %.6f\n", x, cosx);
     return 0;
 }
