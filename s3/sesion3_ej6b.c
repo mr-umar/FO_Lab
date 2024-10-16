@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 int main() {
-    double x, cosx = 1.0, suma;
+    double x, cosx = 1.0, termino;
     unsigned int n;
     int i, j; 
     double factorial, potencia;
@@ -34,12 +34,12 @@ int main() {
             factorial *= j;
         }
 
-        // Calcular el suma de la serie
-        suma = (potencia / factorial) * (i % 2 == 0 ? 1 : -1);
+        // Calcular el termino de la serie
+        termino = (potencia / factorial) * (i % 2 == 0 ? 1 : -1);
 
-        cosx += suma;
+        cosx += termino;
     }
 
-    printf("cos(%.2f) = %.6f\n", x, cosx);
+    printf("cos(%.2f) = %.2f\n", x, cosx);
     return 0;
 }
