@@ -1,7 +1,7 @@
 /*
 ** Fichero: sesion4_ej1.c
 ** Autor: Umar Mohammad Riaz
-** Fecha: 16/10/2024
+** Fecha: 23/10/2024
 **
 ** Descripción: Ejercicio 1 de la sesión 4 de laboratorio.
 **
@@ -24,7 +24,6 @@ typedef struct {
 int main() {
     tpiscina p = {2.5, 50.0, 21.0, 6.5, 2625.0, 26.5, 8, 250.0, 'N'};
 
-    // Comprobaciones
     if (p.ancho != p.numCarriles * p.anchoCarril) {
         printf("Ancho de la piscina no es correcto: inicial = %.1f calculado = %.1f\n", p.ancho, p.numCarriles * p.anchoCarril);
         p.ancho = p.numCarriles * p.anchoCarril;
@@ -37,7 +36,6 @@ int main() {
         printf("Se ha modificado el volumen de la piscina\n");
     }
 
-    // Mostrar resultados finales
     printf("********************* Caracteristicas de la piscina *********************\n");
     printf("Profundidad = %.1f  Largo = %.1f   Ancho = %.1f\n", p.profundidad, p.largo, p.ancho);
     printf("Ph = %.1f   Volumen = %.1f   Temperatura = %.1f\n", p.ph, p.volumen, p.temperatura);
