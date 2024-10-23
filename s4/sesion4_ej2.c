@@ -9,12 +9,12 @@
 
 #include <stdio.h>
 
-typedef struct {
-    unsigned char R;
-    unsigned char G;
-    unsigned char B;
-    unsigned char A;
-} tpixel;
+typedef struct { 
+    unsigned char R;   /* Componente rojo */ 
+    unsigned char G;   /* Componente verde */ 
+    unsigned char B;   /* Componente azul */ 
+    unsigned char A;   /* Transparencia */ 
+   } tpixel;
 
 int main() {
     tpixel pixel1, pixel2, pixelMedio;
