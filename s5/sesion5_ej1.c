@@ -8,3 +8,12 @@
 */
 
 #include <stdio.h>
+
+
+int main(){
+    
+    int frase[200] = {"Esto es una frase."};
+
+    
+
+}
