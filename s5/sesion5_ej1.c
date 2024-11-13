@@ -4,36 +4,15 @@
 ** Fecha: 13/11/2024
 **
 ** Descripción: Ejercicio 1 de la sesión 5 de laboratorio.
-**
 */
 
 #include <stdio.h>
 
 
-int main(){
-    
-    int frase[200] = {"Esto es una frase."};
-
-    
-
-}
-
-
-/*
-** Fichero: sesion5_ej1.c
-** Autor: Umar Mohammad Riaz
-** Fecha: 13/11/2024
-**
-** Descripción: Declaración e inicialización de variables tipo vector.
-*/
-
-#include <stdio.h>
-
-// Estructura para almacenar una fecha
 typedef struct {
     int dia;
     int mes;
-    int ano;
+    int anyo;
 } Fecha;
 
 int main() {
@@ -73,7 +52,7 @@ int main() {
     // Mostrar fechas
     printf("Valor de fechas:\n");
     for (int i = 0; i < 5; i++) {
-        printf("%d/%d/%d", fechas[i].dia, fechas[i].mes, fechas[i].ano);
+        printf("%d/%d/%d", fechas[i].dia, fechas[i].mes, fechas[i].anyo);
         if (i < 4) printf(", ");
     }
     putchar('\n');
