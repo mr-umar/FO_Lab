@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 
+
 typedef struct {
     int id;
     float nota_promedio;
