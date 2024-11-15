@@ -7,20 +7,22 @@
 */
 
 #include <stdio.h>
+#define DIM 10
 
-int main() {
-    int vdesord[10] = {3, 56, 23, 109, 238, 32, 56, 67, 10, 88};
-    int valor, encontrado = 0;
+int main()
+{
+    int vdesord[DIM] = {3, 56, 23, 109, 238, 32, 56, 67, 10, 88};
+    int i, valor, encontrado = 0;
 
     printf("Contenido del vector vdesord:\n");
-    for (int i = 0; i < 10; i++) {
+    for (i = 0; i < DIM; i++) {
         printf("vdesord[%d] = %d\n", i, vdesord[i]);
     }
 
     printf("\nIntroduzca un valor entero: ");
     scanf("%d", &valor);
 
-    for (int i = 0; i < 10; i++) {
+    for (i = 0; i < DIM; i++) {
         if (vdesord[i] == valor) {
             printf("La primera aparición del valor %d se encuentra en la posición %d del vector\n", valor, i);
             encontrado = 1;
