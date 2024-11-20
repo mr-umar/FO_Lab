@@ -1,44 +1,47 @@
-/*
+#include <gtk/gtk.h> 
 
-Descripción: Escribe un programa en C que lea una secuencia de números enteros desde el teclado.
-La secuencia finaliza cuando el usuario introduce el número -1. El programa debe calcular y mostrar
-la suma de los números pares y la suma de los números impares de la secuencia. Si la secuencia está 
-vacía (solo se introduce -1), el programa debe mostrar un mensaje indicando que no se han introducido
-números.
+static int counter = 0; 
 
+void greet(GtkWidget* widget, gpointer data) 
+{ 
+	// printf equivalent in GTK+ 
+	g_print("Welcome to GTK\n"); 
+	g_print("%s clicked %d times\n", 
+			(char*)data, ++counter); 
+} 
 
-Introduce un número (finaliza con -1): 5
-Introduce un número (finaliza con -1): 4
-Introduce un número (finaliza con -1): 7
-Introduce un número (finaliza con -1): -1
-Suma de números pares: 4
-Suma de números impares: 12
-*/
+void destroy(GtkWidget* widget, gpointer data) 
+{ 
+	gtk_main_quit(); 
+} 
 
-#include <stdio.h>
+int main(int argc, char* argv[]) 
+{ 
 
-int main(){
+	GtkWidget* window; 
+	GtkWidget* button; 
+	gtk_init(&argc, &argv); 
 
-    int pares = 0, impares = 0, numero = 0;
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL); 
 
-    
-    while (numero != -1) {
-        printf("Introduce un numero (finaliza con -1): ");
-        scanf("%d", &numero);
+	g_signal_connect(window, "destroy", 
+					G_CALLBACK(destroy), NULL); 
+	/* Let's set the border width of the window to 20. 
+	* You may play with the value and see the 
+	* difference. */
+	gtk_container_set_border_width(GTK_CONTAINER(window), 20); 
 
-        if (numero != -1) { // Solo se suman los números distintos de -1
-            if (numero % 2 == 0) {
-                pares += numero;
-            } else {
-                impares += numero;
-            }
-        }
-    }
-    
-    printf("Suma de numeros pares: %d\n", pares);
-    printf("Suma de numeros impares: %d\n", impares);
+	button = gtk_button_new_with_label("Click Me!"); 
 
+	g_signal_connect(GTK_OBJECT(button), 
+					"clicked", G_CALLBACK(greet), 
+					"button"); 
 
-    return 0;
+	gtk_container_add(GTK_CONTAINER(window), button); 
 
-}
+	gtk_widget_show_all(window); 
+
+	gtk_main(); 
+
+	return 0; 
+} 

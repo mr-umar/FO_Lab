@@ -9,16 +9,19 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int numero, suma = 0, i;
-
+    
     printf("Introduzca una secuencia de 10 numeros naturales: ");
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++)
+    {
         scanf("%d", &numero);
         suma += numero;
     }
-
+    
     printf("Suma: %d\n", suma);
+
     return 0;
 }
