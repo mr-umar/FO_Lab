@@ -3,8 +3,6 @@
 #include <stdio.h>
 
 int main() {
-
-    
     printf("Hoy es 23/10/2024\n");
     return 0;
 }
