@@ -19,6 +19,7 @@ typedef struct {
     char tipo;
 } tciudad;
 
+
 int main() {
     tciudad ciudades[10];
     float superficie_total = 0;
