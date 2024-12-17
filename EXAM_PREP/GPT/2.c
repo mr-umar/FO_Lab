@@ -8,18 +8,17 @@ void perimetroCirculo(float radio) {
 
     resultado = 2 * PI * radio;
 
-    printf("EL PERIMETRO ES %f.\n", resultado);
+    printf("EL PERIMETRO ES %.2f.\n", resultado);
     
 }
-
 
 
 void areaCirculo(float radio) {
     float resultado;
 
-    resultado = PI * PI * radio;
+    resultado = PI * radio * radio;
 
-    printf("EL AREA ES %02f.\n", resultado);
+    printf("EL AREA ES %.2f.\n", resultado);
 
 }
 
@@ -28,7 +27,7 @@ int main() {
 
     float radio;
 
-    printf("Introduzca el radio del circulo:: ");
+    printf("Introduzca el radio del circulo: ");
     scanf("%f", &radio);
 
     perimetroCirculo(radio);
